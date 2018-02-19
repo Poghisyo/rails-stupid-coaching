@@ -1,7 +1,24 @@
-<h1>Coaches answer</h1>
 
+<div class="container">
+  <div class="row">
 
-<p> <%= @question  %></p>
+    <div class="col-xs-12 col-md-8 col-md-offset-2 ">
+      <div class="body-container text-center">
 
-<p>coaches answer</p>
-<%= link_to 'ask a new question', 'questions/ask'  %>
+        <h1>Stupid Coaching</h1>
+        <div class="question">
+          <h4>You said:</h4>
+          <p> <%= @question %></p>
+        </div>
+
+        <h4>Coach says:</h4>
+        <div class='coach-answer'>
+          <h4> <%= @answer%> </h4>
+          <%= image_tag @coach, id:'coach' %>
+        </div>
+        <%= link_to 'ask a new question', ask_path, class:'btn btn-primary'  %>
+
+      </div>
+    </div>
+  </div>
+</div>

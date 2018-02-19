@@ -1,8 +1,24 @@
 
-<p>Speak to your coach</p>
+<div class="container">
+  <div class="row">
 
-<form action="/answer">
-  <label for="question">Speak to your coach</label>
-  <input type="text" id="question" name="query" placeholder="what time is it?">
-  <input type="submit" value="Go on!">
-</form>
+    <div class="col-xs-12 col-md-8 col-md-offset-2 ">
+      <div class="body-container text-center">
+
+        <h1>Stupid Coaching</h1>
+        <%= image_tag 'tough-coach.gif', id:'coach' %>
+        <h2>Your coach says its time to get to work and bust out some awesome code.</h2>
+
+
+        <form action="answer" method='get' class='ask-form'>
+          <label for="question" class='text-left'>Speak to your coach:</label>
+          <div class="form-group form-question">
+            <input type="text" id="question" class='form-control' name="query" placeholder="your response">
+            <input type="submit" class='btn btn-warning' value="Go on!">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
